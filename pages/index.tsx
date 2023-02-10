@@ -30,10 +30,12 @@ export default function Home({
         <Typography level="display2" fontSize="xl">
           Posts
         </Typography>
-        <List sx={{
-          display: "flex",
-          gap: "10px"
-              }}>
+        <List
+          sx={{
+            display: "flex",
+            gap: "10px",
+          }}
+        >
           {allPostsData.map(({ id, date, category, title, summary }) => (
             <ListItem
               key={id}

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Typography from "@mui/joy/Typography";
 import Box from "@mui/joy/Box";
-import ModeButton from "./modeButton"
+import ModeButton from "./modeButton";
 
 const name = "Joy UI Next.js Blog";
 export const siteTitle = "Joy UI";
