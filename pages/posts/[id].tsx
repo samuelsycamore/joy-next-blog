@@ -14,6 +14,7 @@ export default function Post({
     title: string;
     summary: string;
     category: string;
+    author: string;
     date: string;
     contentHtml: string;
   };
@@ -24,12 +25,14 @@ export default function Post({
         <title>{postData.title}</title>
       </Head>
       <Box sx={{ maxWidth: "600px", mx: "auto", p: "10px" }}>
-        <Typography level="body2">
-          <Date dateString={postData.date} />
-        </Typography>
-        <Typography level="body2">{postData.category}</Typography>
-        <Typography level="display2" fontSize="30px">
+        
+        <Typography level="display2" fontSize="30px" mb={1}>
           {postData.title}
+        </Typography>
+        <Typography level="body2">
+          {postData.author} ⋅ {' '}
+          <Date dateString={postData.date} /> ⋅ {' '}
+          {postData.category}
         </Typography>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </Box>
