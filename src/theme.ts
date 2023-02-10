@@ -2,8 +2,7 @@ import { extendTheme } from "@mui/joy/styles";
 
 const theme = extendTheme({
   fontFamily: {
-    body: "'Libre Baskerville', var(--joy-fontFamily-fallback)",
-    display: "'Space Mono', var(--joy-fontFamily-fallback)",
+    body: "'Public Sans', var(--joy-fontFamily-fallback)"
   },
   colorSchemes: {
     light: {
