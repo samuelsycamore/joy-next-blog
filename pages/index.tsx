@@ -4,7 +4,10 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
 import { GetStaticProps } from "next";
-import { Box, Typography } from "@mui/joy";
+import Box from "@mui/joy/Box";
+import Typography from "@mui/joy/Typography";
+import List from "@mui/joy/List";
+import ListItem from "@mui/joy/ListItem";
 
 export default function Home({
   allPostsData,
@@ -23,19 +26,27 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
 
-      <Box sx={{ maxWidth: '600px', mx: 'auto' }}>
-        <Typography level="display2" fontSize="xl">Posts</Typography>
-        <ul>
-          {allPostsData.map(({ id, date, title }) => (
-            <li key={id}>
+      <Box sx={{ maxWidth: "600px", mx: "auto" }}>
+        <Typography level="display2" fontSize="xl">
+          Posts
+        </Typography>
+        <List>
+          {allPostsData.map(({ id, date, category, title, summary }) => (
+            <ListItem
+              key={id}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-start",
+              }}
+            >
+              <Date dateString={date} />
+              {category}
               <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small>
-                <Date dateString={date} />
-              </small>
-            </li>
+              {summary}
+            </ListItem>
           ))}
-        </ul>
+        </List>
       </Box>
     </Layout>
   );

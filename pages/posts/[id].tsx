@@ -3,7 +3,9 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
 import Date from "../../components/date";
 import { GetStaticProps, GetStaticPaths } from "next";
-import { Box, Typography } from "@mui/joy";
+import Box from "@mui/joy/Box";
+import Typography from "@mui/joy/Typography";
+import List from "@mui/joy/List";
 
 export default function Post({
   postData,
@@ -22,12 +24,10 @@ export default function Post({
         <title>{postData.title}</title>
       </Head>
       <Box sx={{ maxWidth: "600px", mx: "auto", p: "10px" }}>
-        <Typography level="body3">
+        <Typography level="body2">
           <Date dateString={postData.date} />
         </Typography>
-        <Typography level="body3">
-          {postData.category}
-        </Typography>
+        <Typography level="body2">{postData.category}</Typography>
         <Typography level="display2" fontSize="30px">
           {postData.title}
         </Typography>

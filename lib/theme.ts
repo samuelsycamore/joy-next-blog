@@ -2,7 +2,7 @@ import { extendTheme } from "@mui/joy/styles";
 
 const theme = extendTheme({
   fontFamily: {
-    body: "'Public Sans', var(--joy-fontFamily-fallback)"
+    body: "'Public Sans', var(--joy-fontFamily-fallback)",
   },
   colorSchemes: {
     light: {

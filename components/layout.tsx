@@ -1,14 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Typography } from "@mui/joy";
+import Typography from "@mui/joy/Typography";
+import Box from "@mui/joy/Box";
 
 const name = "Joy UI Next.js Blog";
 export const siteTitle = "Joy UI";
 
-export default function Layout({
-  children,
-  home,
-}) {
+export default function Layout({ children, home }) {
   return (
     <div>
       <Head>
@@ -24,9 +22,13 @@ export default function Layout({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header>
-          <>
-            <Typography level="display1">{name.toUpperCase()}</Typography>
-          </>
+        <Box sx={{ maxWidth: "600px", mx: "auto" }}>
+          <Link href="/">
+            <Typography component="h1" level="display2">
+              {name}
+            </Typography>
+          </Link>
+        </Box>
       </header>
       <main>{children}</main>
       {!home && (
