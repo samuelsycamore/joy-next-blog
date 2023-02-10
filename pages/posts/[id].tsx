@@ -10,6 +10,8 @@ export default function Post({
 }: {
   postData: {
     title: string;
+    summary: string;
+    category: string;
     date: string;
     contentHtml: string;
   };
@@ -20,13 +22,16 @@ export default function Post({
         <title>{postData.title}</title>
       </Head>
       <Box sx={{ maxWidth: "600px", mx: "auto", p: "10px" }}>
+        <Typography level="body3">
+          <Date dateString={postData.date} />
+        </Typography>
+        <Typography level="body3">
+          {postData.category}
+        </Typography>
         <Typography level="display2" fontSize="30px">
           {postData.title}
         </Typography>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-        <Typography level="body3">
-          Published on <Date dateString={postData.date} />
-        </Typography>
       </Box>
     </Layout>
   );
