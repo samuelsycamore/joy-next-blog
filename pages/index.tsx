@@ -22,11 +22,11 @@ export default function Home({
       </Head>
 
       <Box sx={{ maxWidth: '600px', mx: 'auto' }}>
-        <Typography level="display2" fontSize="xl">Blog</Typography>
+        <Typography level="display2" fontSize="xl">Posts</Typography>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
-              <Link href={`/blog/${id}`}>{title}</Link>
+              <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small>
                 <Date dateString={date} />
