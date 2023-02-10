@@ -30,7 +30,10 @@ export default function Home({
         <Typography level="display2" fontSize="xl">
           Posts
         </Typography>
-        <List>
+        <List sx={{
+          display: "flex",
+          gap: "10px"
+              }}>
           {allPostsData.map(({ id, date, category, title, summary }) => (
             <ListItem
               key={id}
@@ -40,8 +43,10 @@ export default function Home({
                 alignItems: "flex-start",
               }}
             >
-              <Date dateString={date} />
-              {category}
+              <Box>
+                <Date dateString={date} />
+                {category}
+              </Box>
               <Link href={`/posts/${id}`}>{title}</Link>
               {summary}
             </ListItem>
