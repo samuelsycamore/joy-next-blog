@@ -22,18 +22,15 @@ export default function Post({
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <Box sx={{ maxWidth: "600px", mx: "auto", p: "10px" }}>
-        
-        <Typography level="display2" fontSize="30px" mb={1}>
-          {postData.title}
-        </Typography>
-        <Typography level="body2">
-          {postData.author} ⋅ {' '}
-          <Date dateString={postData.date} /> ⋅ {' '}
-          {postData.category}
-        </Typography>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </Box>
+
+      <Typography level="display2" fontSize="30px" mb={1}>
+        {postData.title}
+      </Typography>
+      <Typography level="body2">
+        {postData.author} ⋅ <Date dateString={postData.date} /> ⋅{" "}
+        {postData.category}
+      </Typography>
+      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
   );
 }

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
@@ -23,38 +23,35 @@ export default function Home({
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Joy Next Blog</title>
       </Head>
-
-      <Box sx={{ maxWidth: "600px", mx: "auto" }}>
-        <Typography level="display2" fontSize="xl">
-          Posts
-        </Typography>
-        <List
-          sx={{
-            display: "flex",
-            gap: "10px",
-          }}
-        >
-          {allPostsData.map(({ id, date, category, title, summary }) => (
-            <ListItem
-              key={id}
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-start",
-              }}
-            >
-              <Box>
-                <Date dateString={date} />
-                {category}
-              </Box>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              {summary}
-            </ListItem>
-          ))}
-        </List>
-      </Box>
+      <Typography level="h2" fontSize="xl">
+        Posts
+      </Typography>
+      <List
+        sx={{
+          display: "flex",
+          gap: "10px",
+        }}
+      >
+        {allPostsData.map(({ id, date, category, title, summary }) => (
+          <ListItem
+            key={id}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+            }}
+          >
+            <Box>
+              <Date dateString={date} />
+              {category}
+            </Box>
+            <Link href={`/posts/${id}`}>{title}</Link>
+            {summary}
+          </ListItem>
+        ))}
+      </List>
     </Layout>
   );
 }
