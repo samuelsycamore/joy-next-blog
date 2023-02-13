@@ -5,8 +5,6 @@ import Date from "../../components/date";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Box from "@mui/joy/Box";
 import Typography from "@mui/joy/Typography";
-import List from "@mui/joy/List";
-
 export default function Post({
   postData,
 }: {
@@ -20,7 +18,7 @@ export default function Post({
   };
 }) {
   return (
-    <Layout home>
+    <Layout home={false}>
       <Head>
         <title>{postData.title}</title>
       </Head>
