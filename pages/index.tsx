@@ -47,7 +47,7 @@ export default function Home({
               <Date dateString={date} />
               {category}
             </span>
-            <Link href={`/posts/${id}`}>{title}</Link>
+            <Link href={`/blog/${id}`}>{title}</Link>
             {summary}
           </ListItem>
         ))}
