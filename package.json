@@ -9,6 +9,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
     "@mui/joy": "^5.0.0-alpha.65",
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",

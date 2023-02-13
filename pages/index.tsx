@@ -43,10 +43,10 @@ export default function Home({
               alignItems: "flex-start",
             }}
           >
-            <Box>
+            <span>
               <Date dateString={date} />
               {category}
-            </Box>
+            </span>
             <Link href={`/posts/${id}`}>{title}</Link>
             {summary}
           </ListItem>

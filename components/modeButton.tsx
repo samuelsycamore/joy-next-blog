@@ -1,6 +1,8 @@
 import { useColorScheme } from "@mui/joy/styles";
-import Button from "@mui/joy/Button";
+import IconButton from "@mui/joy/IconButton";
 import * as React from "react";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 export default function ModeButton() {
   const { mode, setMode } = useColorScheme();
@@ -12,15 +14,15 @@ export default function ModeButton() {
 
   if (!mounted) {
     // to avoid layout shift, render a placeholder button
-    return <Button variant="outlined" color="neutral" sx={{ width: 120 }} />;
+    return <IconButton variant="plain" color="neutral" sx={{ width: 60 }} />;
   }
   return (
-    <Button
-      variant="outlined"
+    <IconButton
+      variant="plain"
       color="neutral"
       onClick={() => setMode(mode === "dark" ? "light" : "dark")}
     >
-      {mode === "dark" ? "light" : "dark"}
-    </Button>
+      {mode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}
+    </IconButton>
   );
 }
