@@ -2,6 +2,7 @@ import * as React from "react";
 import Head from "next/head";
 import { AppProps } from "next/app";
 import { CssVarsProvider } from "@mui/joy/styles";
+import GlobalStyles from "@mui/joy/GlobalStyles";
 import theme from "../lib/theme";
 import CssBaseline from "@mui/joy/CssBaseline";
 import { CacheProvider, EmotionCache } from "@emotion/react";
@@ -28,6 +29,20 @@ export default function MyApp(props: MyAppProps) {
         disableNestedContext
       >
         <CssBaseline />
+        <GlobalStyles
+          styles={{
+            // CSS object styles
+            html: {
+              // ...
+            },
+            body: {
+              // ...
+            },
+            a: {
+              textDecoration: "none",
+            },
+          }}
+        />
         <Component {...pageProps} />
       </CssVarsProvider>
     </CacheProvider>

@@ -5,6 +5,7 @@ import Date from "../../components/date";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Box from "@mui/joy/Box";
 import Typography from "@mui/joy/Typography";
+
 export default function Post({
   postData,
 }: {

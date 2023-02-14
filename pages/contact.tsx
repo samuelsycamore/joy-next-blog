@@ -4,7 +4,6 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
 import { GetStaticProps } from "next";
-import Box from "@mui/joy/Box";
 import Typography from "@mui/joy/Typography";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
