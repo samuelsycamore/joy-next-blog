@@ -19,7 +19,7 @@ export default function Post({
   };
 }) {
   return (
-    <Layout home={false}>
+    <Layout>
       <Head>
         <title>{postData.title}</title>
       </Head>

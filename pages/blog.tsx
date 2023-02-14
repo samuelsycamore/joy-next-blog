@@ -8,7 +8,7 @@ import Typography from "@mui/joy/Typography";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 
-export default function Home({
+export default function Blog({
   allPostsData,
 }: {
   allPostsData: {
@@ -20,7 +20,7 @@ export default function Home({
   }[];
 }) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>Joy Next Blog</title>
       </Head>

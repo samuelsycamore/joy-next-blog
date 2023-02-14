@@ -5,7 +5,7 @@ import { Box } from "@mui/system";
 
 export default function About() {
   return (
-    <Layout home>
+    <Layout>
       <Typography level="h2">About me</Typography>
       <img src="../images/photo.jpeg" />
       <Typography>

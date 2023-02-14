@@ -4,7 +4,7 @@ import TypographySystem from "../components/typographySystem";
 
 export default function TypographySys({}) {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>Typography System</title>
       </Head>

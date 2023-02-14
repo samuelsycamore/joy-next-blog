@@ -2,7 +2,7 @@ import Box from "@mui/joy/Box";
 import Grid from "@mui/joy/Grid";
 import NavBar from "./navBar";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <Grid
       container
