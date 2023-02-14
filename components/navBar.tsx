@@ -31,6 +31,9 @@ export default function NavBar() {
           Joy Next Blog
         </Typography>
       </Link>
+      <nav>
+
+      </nav>
       <ModeButton />
     </Box>
   );
