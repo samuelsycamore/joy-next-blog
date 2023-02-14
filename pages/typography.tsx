@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
 import TypographySystem from "../components/typographySystem";
 
 export default function TypographySys({}) {
