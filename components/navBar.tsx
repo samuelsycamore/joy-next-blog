@@ -1,28 +1,30 @@
 import Link from "next/link";
 import Box from "@mui/joy/Box";
+import List from "@mui/joy/List";
+import ListItem from "@mui/joy/ListItem";
 import Typography from "@mui/joy/Typography";
 import ModeButton from "./modeButton";
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 
-const navItems = {
-  '/': {
-    name: 'Home',
+const navLinks = {
+  "/": {
+    name: "Home",
   },
-  '/about': {
-    name: 'About',
+  "/about": {
+    name: "About",
   },
-  '/blog': {
-    name: 'Blog',
+  "/blog": {
+    name: "Blog",
   },
-  '/contact': {
-    name: 'Contact',
+  "/contact": {
+    name: "Contact",
   },
 };
 
 export default function NavBar() {
   let pathname = usePathname();
-  if (pathname.includes('/blog/')) {
-    pathname = '/blog';
+  if (pathname.includes("/blog/")) {
+    pathname = "/blog";
   }
   return (
     <Box>
@@ -32,7 +34,19 @@ export default function NavBar() {
         </Typography>
       </Link>
       <nav>
+        <List>
+          {Object.entries(navLinks).map(([path, { name }]) => {
+            const isActive = path === pathname;
 
+            return (
+              <ListItem>
+                <Link key={path} href={path}>
+                  {name}
+                </Link>
+              </ListItem>
+            );
+          })}
+        </List>
       </nav>
       <ModeButton />
     </Box>
