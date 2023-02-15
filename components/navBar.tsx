@@ -34,7 +34,9 @@ export default function NavBar() {
         </Typography>
       </Link>
       <nav>
-        <List>
+        <List
+          sx={{ display: "flex", flexDirection: { xs: "row", sm: "column" } }}
+        >
           {Object.entries(navLinks).map(([path, { name }]) => {
             const isActive = path === pathname;
 

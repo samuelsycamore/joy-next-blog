@@ -10,8 +10,8 @@ export default function Layout({ children }) {
         maxWidth: "900px",
         display: "flex",
         mx: "auto",
-        mt: "2rem",
-        gap: "6rem",
+        mt: { xs: "2rem", md: "6rem" },
+        gap: { xs: "2rem", md: "6rem" },
         p: "2rem",
       }}
     >
