@@ -4,28 +4,27 @@ import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import Typography from "@mui/joy/Typography";
 import ModeButton from "./modeButton";
-import { usePathname } from "next/navigation";
 
-const navLinks = {
-  "/": {
+const navLinks = [
+  {
     name: "Home",
+    path: "/",
   },
-  "/blog": {
+  {
     name: "Blog",
+    path: "/blog/",
   },
-  "/about": {
+  {
     name: "About",
+    path: "/about/",
   },
-  "/contact": {
+  {
     name: "Contact",
+    path: "/contact",
   },
-};
+];
 
 export default function NavBar() {
-  let pathname = usePathname();
-  if (pathname.includes("/blog/")) {
-    pathname = "/blog";
-  }
   return (
     <Box>
       <Link href="/">
@@ -37,9 +36,7 @@ export default function NavBar() {
         <List
           sx={{ display: "flex", flexDirection: { xs: "row", sm: "column" } }}
         >
-          {Object.entries(navLinks).map(([path, { name }]) => {
-            const isActive = path === pathname;
-
+          {navLinks.map(({ path, name }) => {
             return (
               <ListItem>
                 <Link key={path} href={path}>
