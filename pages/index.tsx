@@ -22,6 +22,9 @@ export default function Index() {
         <ListItem>✓ Light and dark modes, with dark by default</ListItem>
         <ListItem>✓ Includes Prettier for code formatting</ListItem>
       </List>
+      <Typography>
+        Created with 💙 by <a href="https://mui.com">MUI</a>.
+      </Typography>
     </Layout>
   );
 }

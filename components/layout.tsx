@@ -10,8 +10,9 @@ export default function Layout({ children }) {
         maxWidth: "900px",
         display: "flex",
         mx: "auto",
-        mt: "6rem",
+        mt: "2rem",
         gap: "6rem",
+        p: "2rem",
       }}
     >
       <NavBar />
