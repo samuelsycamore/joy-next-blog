@@ -1,13 +1,22 @@
 import Layout from "../components/layout";
 import Link from "next/link";
 import Typography from "@mui/joy/Typography";
-import { Box } from "@mui/system";
+import Avatar from "@mui/joy/Avatar";
 
 export default function About() {
   return (
     <Layout>
       <Typography level="h2">About me</Typography>
-      <img src="../images/photo.jpeg" />
+      <Avatar
+        sx={{
+          "--Avatar-size": "100px",
+          my: "1em",
+        }}
+        alt="this person does not exist"
+        src="../images/photo.jpeg"
+      >
+        JN
+      </Avatar>
       <Typography>
         I'm baby waistcoat ugh before they sold out pok pok mlkshk, iceland
         chicharrones. Art party craft beer semiotics Brooklyn, bitters aesthetic
