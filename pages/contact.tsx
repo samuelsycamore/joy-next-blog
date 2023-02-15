@@ -10,6 +10,29 @@ import ListItemDecorator from "@mui/joy/ListItemDecorator";
 import ListItemContent from "@mui/joy/ListItemContent";
 import Typography from "@mui/joy/Typography";
 
+const contactList = [
+  {
+    name: "Email",
+    url: "mailto:name@email.com",
+    icon: <EmailIcon />,
+  },
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/",
+    icon: <LinkedInIcon />,
+  },
+  {
+    name: "Twitter",
+    url: "https://twitter.com/",
+    icon: <TwitterIcon />,
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/",
+    icon: <GitHubIcon />,
+  },
+];
+
 export default function Contact() {
   return (
     <Layout>
@@ -18,38 +41,14 @@ export default function Contact() {
       </Typography>
       Here's how you can get in touch with me:
       <List>
-        <ListItem>
-          <ListItemDecorator>
-            <EmailIcon />
-          </ListItemDecorator>
-          <ListItemContent>
-            <a href="mailto:name@email.com">name@email.com</a>
-          </ListItemContent>
-        </ListItem>
-        <ListItem>
-          <ListItemDecorator>
-            <GitHubIcon />
-          </ListItemDecorator>
-          <ListItemContent>
-            <a href="https://github.com/">GitHub username</a>
-          </ListItemContent>
-        </ListItem>
-        <ListItem>
-          <ListItemDecorator>
-            <LinkedInIcon />
-          </ListItemDecorator>
-          <ListItemContent>
-            <a href="https://linkedin.com/">LinkedIn username</a>
-          </ListItemContent>
-        </ListItem>
-        <ListItem>
-          <ListItemDecorator>
-            <TwitterIcon />
-          </ListItemDecorator>
-          <ListItemContent>
-            <a href="https://twitter.com/">Twitter username</a>
-          </ListItemContent>
-        </ListItem>
+        {contactList.map(({ name, url, icon }) => (
+          <ListItem key={url}>
+            <ListItemDecorator>{icon}</ListItemDecorator>
+            <ListItemContent>
+              <a href={url}>{name}</a>
+            </ListItemContent>
+          </ListItem>
+        ))}
       </List>
     </Layout>
   );
