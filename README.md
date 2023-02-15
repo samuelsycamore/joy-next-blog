@@ -1,6 +1,7 @@
 # Minimalist Joy UI Blog
 
 ## Features
+
 ✓ Built with TypeScript
 
 ✓ Designed with Joy UI's default styles

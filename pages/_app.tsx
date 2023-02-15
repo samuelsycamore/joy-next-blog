@@ -33,6 +33,7 @@ export default function MyApp(props: MyAppProps) {
           styles={{
             a: {
               textDecoration: "none",
+              color: "var(--joy-palette-primary-400)",
             },
             li: {
               paddingLeft: "0 !important",
