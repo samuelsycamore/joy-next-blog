@@ -1,5 +1,4 @@
 import Layout from "../components/layout";
-import Link from "next/link";
 import Typography from "@mui/joy/Typography";
 import Avatar from "@mui/joy/Avatar";
 

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
@@ -21,9 +20,6 @@ export default function Blog({
 }) {
   return (
     <Layout>
-      <Head>
-        <title>Joy Next Blog</title>
-      </Head>
       <Typography level="h2">Posts</Typography>
       <List
         sx={{
