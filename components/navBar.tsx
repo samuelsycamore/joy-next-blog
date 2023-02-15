@@ -10,11 +10,11 @@ const navLinks = {
   "/": {
     name: "Home",
   },
-  "/about": {
-    name: "About",
-  },
   "/blog": {
     name: "Blog",
+  },
+  "/about": {
+    name: "About",
   },
   "/contact": {
     name: "Contact",

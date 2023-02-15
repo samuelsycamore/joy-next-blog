@@ -31,15 +31,11 @@ export default function MyApp(props: MyAppProps) {
         <CssBaseline />
         <GlobalStyles
           styles={{
-            // CSS object styles
-            html: {
-              // ...
-            },
-            body: {
-              // ...
-            },
             a: {
               textDecoration: "none",
+            },
+            li: {
+              paddingLeft: "0 !important",
             },
           }}
         />
