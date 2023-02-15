@@ -5,10 +5,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/List";
+import Typography from "@mui/joy/Typography";
 
 export default function Contact() {
   return (
     <Layout>
+      <Typography level="h2" sx={{ mb: "1rem" }}>
+        Posts
+      </Typography>
       Here's how you can get in touch with me:
       <List>
         <ListItem>

@@ -6,11 +6,13 @@ import Avatar from "@mui/joy/Avatar";
 export default function About() {
   return (
     <Layout>
-      <Typography level="h2">About me</Typography>
+      <Typography level="h2" sx={{ mb: "1rem" }}>
+        About me
+      </Typography>
       <Avatar
         sx={{
           "--Avatar-size": "100px",
-          my: "1em",
+          mb: "1rem",
         }}
         alt="this person does not exist"
         src="../images/photo.jpeg"

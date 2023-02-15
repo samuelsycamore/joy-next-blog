@@ -24,9 +24,7 @@ export default function Blog({
       <Head>
         <title>Joy Next Blog</title>
       </Head>
-      <Typography level="h2" fontSize="xl">
-        Posts
-      </Typography>
+      <Typography level="h2">Posts</Typography>
       <List
         sx={{
           display: "flex",
@@ -42,11 +40,12 @@ export default function Blog({
               alignItems: "flex-start",
             }}
           >
-            <span>
-              <Date dateString={date} />
-              {category}
-            </span>
-            <Link href={`/blog/${id}`}>{title}</Link>
+            <Typography level="body3">
+              <Date dateString={date} /> ⋅ {category}
+            </Typography>
+            <Typography level="h4" component="p">
+              <Link href={`/blog/${id}`}>{title}</Link>
+            </Typography>
             {summary}
           </ListItem>
         ))}
