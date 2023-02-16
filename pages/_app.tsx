@@ -31,6 +31,9 @@ export default function MyApp(props: MyAppProps) {
         <CssBaseline />
         <GlobalStyles
           styles={{
+            html: {
+                overflowY: "scroll",
+            },
             a: {
               textDecoration: "none",
               color: "var(--joy-palette-primary-400)",
