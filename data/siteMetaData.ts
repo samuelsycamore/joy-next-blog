@@ -1,0 +1,17 @@
+export const siteMetaData = {
+  title: "Joy UI Next.js Blog",
+  author: "Sam Sycamore",
+  description: "Minimalist Joy UI blog built with Next.js in TypeScript.",
+  language: "en-us",
+  siteUrl: "https://joy-next-blog.vercel.app",
+  siteRepo: "https://github.com/samuelsycamore/joy-next-blog/",
+  siteLogo: "/public/images/logo.png",
+  image: "/public/images/photo.jpeg",
+  ogImage: "/public/images/photo.jpeg",
+  twImage: "/public/images/photo.jpeg",
+  email: "name@email.com",
+  github: "https://github.com/",
+  twitter: "https://twitter.com/",
+  linkedin: "https://www.linkedin.com/",
+  locale: "en-US",
+};
