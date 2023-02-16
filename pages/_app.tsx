@@ -23,9 +23,9 @@ export default function MyApp(props: MyAppProps) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <CssVarsProvider
-        defaultMode="dark"
+        defaultMode="system"
         theme={theme}
-        modeStorageKey="dark-mode"
+        modeStorageKey="mode-key"
         disableNestedContext
       >
         <CssBaseline />

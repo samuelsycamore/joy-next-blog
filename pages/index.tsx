@@ -19,7 +19,7 @@ export default function Index() {
         <ListItem>✓ Built with TypeScript</ListItem>
         <ListItem>✓ Designed with Joy UI's default styles</ListItem>
         <ListItem>✓ Ready to publish with Next.js Markdown blog</ListItem>
-        <ListItem>✓ Light and dark modes, with dark by default</ListItem>
+        <ListItem>✓ Light and dark modes with toggle button</ListItem>
         <ListItem>✓ Includes Prettier for code formatting</ListItem>
       </List>
       <Typography>
