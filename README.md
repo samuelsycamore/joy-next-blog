@@ -46,3 +46,11 @@ The demo blog posts contain common Frontmatter keys (`title`, `date`, `summary`,
 
 This blog uses [Joy UI](https://mui.com/joy-ui/getting-started/overview/), a React component library maintained by [MUI](https://mui.com) (the creators of [Material UI](https://mui.com/material-ui/getting-started/overview/)).
 
+This template is designed almost entirely with Joy UI's default settings, so the customization is minimal out of the box.
+
+There are three ways you can apply custom styles to this template:
+
+- inline, directly on a Joy UI component, using the `sx` prop
+- at the theme level, in `/lib/theme.ts`
+- globally, in the `<GlobalStyles />` component in `/pages/_app.tsx`
+
