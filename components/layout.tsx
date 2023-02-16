@@ -1,8 +1,9 @@
 import Box from "@mui/joy/Box";
 import Grid from "@mui/joy/Grid";
 import NavBar from "./navBar";
+import { PropsWithChildren } from 'react'
 
-export default function Layout({ children }) {
+export default function Layout(props: PropsWithChildren) {
   return (
     <Grid
       container
@@ -16,7 +17,7 @@ export default function Layout({ children }) {
       }}
     >
       <NavBar />
-      <Box sx={{ maxWidth: "600px" }}>{children}</Box>
+      <Box sx={{ maxWidth: "600px" }}>{props.children}</Box>
     </Grid>
   );
 }

@@ -45,9 +45,11 @@ export default function NavBar() {
               </ListItem>
             );
           })}
+          <ListItem>
+            <ModeButton />
+          </ListItem>
         </List>
       </nav>
-      <ModeButton />
     </Box>
   );
 }
