@@ -1,7 +1,7 @@
 import Box from "@mui/joy/Box";
 import Grid from "@mui/joy/Grid";
 import NavBar from "./navBar";
-import { PropsWithChildren } from 'react'
+import { PropsWithChildren } from "react";
 
 export default function Layout(props: PropsWithChildren) {
   return (

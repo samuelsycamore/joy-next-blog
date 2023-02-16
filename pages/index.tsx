@@ -23,7 +23,7 @@ export default function Index() {
         <ListItem>✓ Includes Prettier for code formatting</ListItem>
       </List>
       <Typography>
-        Created with 💙 by <a href="https://mui.com">MUI</a>.
+        Created with 💙 by <a href="https://mui.com/">MUI</a>.
       </Typography>
     </Layout>
   );
