@@ -5,7 +5,7 @@ export const siteMetaData = {
   language: "en-us",
   siteUrl: "https://joy-next-blog.vercel.app",
   image: "/images/photo.jpeg",
-  ogImage: "/images/og-card.jpg",
-  twImage: "/images/og-card.jpg",
+  ogImage: "https://joy-next-blog.vercel.app/images/og-card.jpg",
+  twImage: "https://joy-next-blog.vercel.app/images/og-card.jpg",
   locale: "en-US",
 };
