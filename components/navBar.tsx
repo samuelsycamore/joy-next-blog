@@ -4,6 +4,7 @@ import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import Typography from "@mui/joy/Typography";
 import ModeButton from "./modeButton";
+import { siteMetaData } from "../data/siteMetaData";
 
 const navLinks = [
   {
@@ -29,12 +30,12 @@ export default function NavBar() {
     <Box>
       <Link href="/">
         <Typography component="h1" level="display2" fontSize="xl">
-          Joy Next Blog
+          {siteMetaData.title}
         </Typography>
       </Link>
       <nav>
         <List
-          sx={{ display: "flex", flexDirection: { xs: "row", sm: "column" } }}
+          sx={{ display: "flex", flexDirection: { xs: "row", md: "column" } }}
         >
           {navLinks.map(({ path, name }) => {
             return (

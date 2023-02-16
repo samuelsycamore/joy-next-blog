@@ -9,9 +9,5 @@ export const siteMetaData = {
   image: "/public/images/photo.jpeg",
   ogImage: "/public/images/photo.jpeg",
   twImage: "/public/images/photo.jpeg",
-  email: "name@email.com",
-  github: "https://github.com/",
-  twitter: "https://twitter.com/",
-  linkedin: "https://www.linkedin.com/",
   locale: "en-US",
 };

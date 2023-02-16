@@ -28,7 +28,6 @@ export default function Layout(props: PropsWithChildren) {
           key={siteMetaData.ogImage}
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content={siteMetaData.twitter} />
         <meta name="twitter:title" content={siteMetaData.title} />
         <meta name="twitter:description" content={siteMetaData.description} />
         <meta name="twitter:image" content={siteMetaData.twImage} />
@@ -40,7 +39,7 @@ export default function Layout(props: PropsWithChildren) {
       <Grid
         container
         sx={{
-          maxWidth: "900px",
+          maxWidth: "1000px",
           display: "flex",
           mx: "auto",
           mt: { xs: "2rem", md: "6rem" },
