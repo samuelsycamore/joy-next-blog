@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Typography from "@mui/joy/Typography";
 import Avatar from "@mui/joy/Avatar";
+import { siteMetaData } from "../lib/siteMetaData";
 
 export default function About() {
   return (
@@ -14,7 +15,7 @@ export default function About() {
           mb: "1rem",
         }}
         alt="this person does not exist"
-        src="../images/photo.jpeg"
+        src={siteMetaData.image}
       >
         JN
       </Avatar>

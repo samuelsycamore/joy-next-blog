@@ -29,11 +29,11 @@ npm install
 - Your blog's metadata lives in `/lib/siteMetaData.ts`.
 - Your personal contact info is in `/pages/contact.tsx`.
 
-Edit these two files to make the site your own.
+Add your details in these two files.
 
 - Your blog's favicon is located in `/public/`.
-- Your avatar (for the Contact page) is in `/public/images/`.
-- The `/public/images/` directory also contains generic Open Graph cards.
+- Your avatar (for the About page) is in `/public/images/`.
+- The `/public/images/` directory also contains a generic Open Graph card.
 
 Replace these three images with your own.
 
@@ -45,3 +45,4 @@ The demo blog posts contain common Frontmatter keys (`title`, `date`, `summary`,
 ### Styling
 
 This blog uses [Joy UI](https://mui.com/joy-ui/getting-started/overview/), a React component library maintained by [MUI](https://mui.com) (the creators of [Material UI](https://mui.com/material-ui/getting-started/overview/)).
+
