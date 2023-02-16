@@ -26,7 +26,7 @@ npm install
 
 ### Personalizing
 
-Your blog's metadata lives in `/data/siteMetaData.ts`.
+Your blog's metadata lives in `/lib/siteMetaData.ts`.
 Your personal contact info is in `/pages/contact.tsx`.
 Edit these two files to make the site your own.
 
