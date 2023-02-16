@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
           {(this.props as any).emotionStyleTags}
         </Head>
         <body>
-          {getInitColorSchemeScript()}
+          {getInitColorSchemeScript({ defaultMode: "system" })}
           <Main />
           <NextScript />
         </body>
