@@ -14,12 +14,20 @@ export default function ModeButton() {
 
   if (!mounted) {
     // to avoid layout shift, render a placeholder button
-    return <IconButton variant="plain" color="neutral" sx={{ width: 60 }} />;
+    return (
+      <IconButton
+        variant="plain"
+        color="neutral"
+        sx={{ width: 60 }}
+        aria-label="Toggle light and dark mode"
+      />
+    );
   }
   return (
     <IconButton
       variant="plain"
       color="neutral"
+      aria-label="Toggle light and dark mode"
       onClick={() => setMode(mode === "dark" ? "light" : "dark")}
     >
       {mode === "dark" ? <LightModeIcon /> : <DarkModeIcon />}

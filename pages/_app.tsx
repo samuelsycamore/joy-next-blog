@@ -32,7 +32,7 @@ export default function MyApp(props: MyAppProps) {
         <GlobalStyles
           styles={{
             html: {
-                overflowY: "scroll",
+              overflowY: "scroll",
             },
             a: {
               textDecoration: "none",
