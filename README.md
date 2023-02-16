@@ -44,4 +44,4 @@ The demo blog posts contain common Frontmatter keys (`title`, `date`, `summary`,
 
 ### Styling
 
-This blog uses [Joy UI](https://mui.com/joy-ui/getting-started/overview/), a React component library maintained by [MUI](https://mui.com) (the creators of [Material UI](https://mui.com/material-ui/getting-started-overview/)).
+This blog uses [Joy UI](https://mui.com/joy-ui/getting-started/overview/), a React component library maintained by [MUI](https://mui.com) (the creators of [Material UI](https://mui.com/material-ui/getting-started/overview/)).
