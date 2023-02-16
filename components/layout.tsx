@@ -24,13 +24,13 @@ export default function Layout(props: PropsWithChildren) {
         <meta property="og:title" content={siteMetaData.title} />
         <meta
           property="og:image"
-          content={`${siteMetaData.siteUrl}/${siteMetaData.ogImage}`}
+          content={`${siteMetaData.siteUrl}${siteMetaData.ogImage}`}
           key={siteMetaData.ogImage}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={siteMetaData.title} />
         <meta name="twitter:description" content={siteMetaData.description} />
-        <meta name="twitter:image" content={`${siteMetaData.siteUrl}/${siteMetaData.ogImage}`} />
+        <meta name="twitter:image" content={`${siteMetaData.siteUrl}${siteMetaData.ogImage}`} />
         <link
           rel="canonical"
           href={`${siteMetaData.siteUrl}${router.asPath}`}
