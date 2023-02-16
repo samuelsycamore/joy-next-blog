@@ -8,7 +8,7 @@
 
 ✓ Ready to publish with Next.js Markdown blog
 
-✓ Light and dark modes, with dark by default
+✓ Light and dark modes with toggle button
 
 ✓ Includes Prettier for code formatting
 
