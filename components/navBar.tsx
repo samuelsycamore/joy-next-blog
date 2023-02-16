@@ -38,8 +38,8 @@ export default function NavBar() {
         >
           {navLinks.map(({ path, name }) => {
             return (
-              <ListItem>
-                <Link key={path} href={path}>
+              <ListItem key={path} >
+                <Link href={path}>
                   {name}
                 </Link>
               </ListItem>
