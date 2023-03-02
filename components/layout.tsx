@@ -41,17 +41,23 @@ export default function Layout(props: PropsWithChildren) {
       </Head>
       <Grid
         container
+        spacing={2}
         sx={{
           maxWidth: "1000px",
           display: "flex",
+          flexGrow: 1,
           mx: "auto",
           mt: { xs: "2rem", md: "6rem" },
-          gap: { xs: "2rem", md: "6rem" },
+
           p: "2rem",
         }}
       >
-        <NavBar />
-        <Box sx={{ maxWidth: "600px" }}>{props.children}</Box>
+        <Grid xs={4}>
+          <NavBar />
+        </Grid>
+        <Grid xs={8}>
+          <Box>{props.children}</Box>
+        </Grid>
       </Grid>
     </>
   );
