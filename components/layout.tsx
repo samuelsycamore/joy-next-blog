@@ -52,10 +52,10 @@ export default function Layout(props: PropsWithChildren) {
           p: "2rem",
         }}
       >
-        <Grid xs={4}>
+        <Grid xs={12} md={4}>
           <NavBar />
         </Grid>
-        <Grid xs={8}>
+        <Grid xs={12} md={8}>
           <Box>{props.children}</Box>
         </Grid>
       </Grid>
