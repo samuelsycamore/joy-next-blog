@@ -23,6 +23,8 @@ export default function Index() {
         <ListItem>✓ Includes Prettier for code formatting</ListItem>
       </List>
       <Typography>
+        View it on{" "}
+        <a href="https://github.com/samuelsycamore/joy-next-blog/">GitHub</a>.
         Created with 💙 by <a href="https://mui.com/">MUI</a>.
       </Typography>
     </Layout>
