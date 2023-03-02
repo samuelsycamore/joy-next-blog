@@ -46,9 +46,9 @@ export default function Layout(props: PropsWithChildren) {
           maxWidth: "1000px",
           display: "flex",
           flexGrow: 1,
+          flexDirection: { xs: "column", md: "row" },
           mx: "auto",
           mt: { xs: "2rem", md: "6rem" },
-
           p: "2rem",
         }}
       >
