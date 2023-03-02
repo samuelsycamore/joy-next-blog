@@ -36,7 +36,13 @@ export default function MyApp(props: MyAppProps) {
             },
             a: {
               textDecoration: "none",
-              color: "var(--joy-palette-primary-400)",
+              color: "var(--joy-palette-primary-500)",
+            },
+            "a:hover": {
+              color: "var(--joy-palette-primary-600)",
+            },
+            "a:active": {
+              color: "var(--joy-palette-primary-700)",
             },
             li: {
               paddingLeft: "0 !important",
