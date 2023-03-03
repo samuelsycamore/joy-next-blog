@@ -10,7 +10,7 @@ export default function Index() {
         Minimalist Joy UI Blog
       </Typography>
       <Typography sx={{ mb: "1rem" }}>
-        Greetings! Welcome to your sleek new Joy UI blog! ✨
+        Greetings! Welcome to your sleek new Joy UI blog. ✨
       </Typography>
       <Typography component="h2" level="h3">
         Features
