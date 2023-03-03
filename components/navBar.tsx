@@ -2,7 +2,7 @@ import Link from "next/link";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import Typography from "@mui/joy/Typography";
-import ModeButton from "./modeButton";
+import ModeButton from "./ModeButton";
 import { siteMetaData } from "../lib/siteMetaData";
 
 const navLinks = [

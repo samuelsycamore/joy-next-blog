@@ -1,7 +1,7 @@
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
-import Date from "../components/date";
+import Date from "../components/Date";
 import { GetStaticProps } from "next";
 import Typography from "@mui/joy/Typography";
 import List from "@mui/joy/List";
