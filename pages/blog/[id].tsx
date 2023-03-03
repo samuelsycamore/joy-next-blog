@@ -1,7 +1,7 @@
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Head from "next/head";
-import Date from "../../components/Date";
+import Date from "../../components/date";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Typography from "@mui/joy/Typography";
 
