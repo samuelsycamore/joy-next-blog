@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Box from "@mui/joy/Box";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import Typography from "@mui/joy/Typography";
@@ -27,7 +26,7 @@ const navLinks = [
 
 export default function NavBar() {
   return (
-    <Box>
+    <>
       <Link href="/">
         <Typography component="h1" level="display2" fontSize="xl">
           {siteMetaData.title}
@@ -49,6 +48,6 @@ export default function NavBar() {
           </ListItem>
         </List>
       </nav>
-    </Box>
+    </>
   );
 }
