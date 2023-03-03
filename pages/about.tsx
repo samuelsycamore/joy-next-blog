@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import Typography from "@mui/joy/Typography";
 import Avatar from "@mui/joy/Avatar";
 import { siteMetaData } from "../lib/siteMetaData";
