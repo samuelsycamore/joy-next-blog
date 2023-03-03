@@ -1,6 +1,6 @@
 import Box from "@mui/joy/Box";
 import Grid from "@mui/joy/Grid";
-import NavBar from "./navBar";
+import NavBar from "./NavBar";
 import { PropsWithChildren } from "react";
 import { siteMetaData } from "../lib/siteMetaData";
 import Head from "next/head";
