@@ -16,13 +16,15 @@ Created with 💙 by MUI.
 
 ## Getting started
 
+[Create a new repository with this template](https://github.com/samuelsycamore/joy-next-blog/generate).
+
 Clone the repo, then run:
 
 ```
 npm install
 ```
 
-`cd` into the new directory and run:
+To start the app in dev mode, run:
 
 ```
 npm run dev
